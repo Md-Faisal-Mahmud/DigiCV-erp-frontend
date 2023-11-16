@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BazvUHXarvlMqperA/yYJ+5DpsmABxnz7Rzlp35mD8w=",
+  "Hash": "tDCpApJisSk0hlpRxssw6nSZ7sjqWym076bYMxlKz/c=",
   "Source": "TS.Sir",
   "BasePath": "_content/TS.Sir",
   "Mode": "Default",
@@ -2123,6 +2123,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ts\\home.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\muham.MUHAMMAD\\Desktop\\Repositories\\DigiCV-erp-frontend\\src_ts\\TypeScript\\TS.Sir\\wwwroot\\ts\\person.js",
+      "SourceId": "TS.Sir",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muham.MUHAMMAD\\Desktop\\Repositories\\DigiCV-erp-frontend\\src_ts\\TypeScript\\TS.Sir\\wwwroot\\",
+      "BasePath": "_content/TS.Sir",
+      "RelativePath": "ts/person.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ts\\person.js"
+    },
+    {
+      "Identity": "C:\\Users\\muham.MUHAMMAD\\Desktop\\Repositories\\DigiCV-erp-frontend\\src_ts\\TypeScript\\TS.Sir\\wwwroot\\ts\\person.js.map",
+      "SourceId": "TS.Sir",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muham.MUHAMMAD\\Desktop\\Repositories\\DigiCV-erp-frontend\\src_ts\\TypeScript\\TS.Sir\\wwwroot\\",
+      "BasePath": "_content/TS.Sir",
+      "RelativePath": "ts/person.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ts\\person.js.map"
     }
   ]
 }
