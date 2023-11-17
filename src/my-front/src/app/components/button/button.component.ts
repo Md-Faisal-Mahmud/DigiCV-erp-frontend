@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,6 +8,13 @@ import { CommonModule } from '@angular/common';
   templateUrl: './button.component.html',
   styleUrl: './button.component.css'
 })
-export class ButtonComponent {
+export class ButtonComponent implements OnInit {
+  @Input() color:string ="";
+  @Input() text:string ="";
+
+  constructor(){}
+  ngOnInit(): void {
+    
+  }
 
 }
