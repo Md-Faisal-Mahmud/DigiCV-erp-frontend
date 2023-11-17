@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class ButtonComponent implements OnInit {
   @Input() color:string ="";
   @Input() text:string ="";
+  @Input() cssClass:string ="";
 
   constructor(){}
   ngOnInit(): void {
