@@ -16,5 +16,8 @@ export class AppComponent {
   onClick(){
     console.log("button clicked");
    }
+   onClick2(){
+    console.log("button clicked2");
+   }
   
 }
