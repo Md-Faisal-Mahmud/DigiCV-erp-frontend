@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -12,10 +12,16 @@ export class ButtonComponent implements OnInit {
   @Input() color:string ="";
   @Input() text:string ="";
   @Input() cssClass:string ="";
+  @Output() mybtnClick = new EventEmitter();
 
   constructor(){}
   ngOnInit(): void {
     
   }
+
+  onClick(){
+    this.mybtnClick.emit();
+    }
+  
 
 }
