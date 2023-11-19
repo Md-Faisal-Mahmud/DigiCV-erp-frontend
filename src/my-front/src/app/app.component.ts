@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
 import { CourseComponent } from './components/course/course.component';
+import { ICourse } from './data/ICourse';
+import { CourseService } from './services/course.service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +15,13 @@ import { CourseComponent } from './components/course/course.component';
 })
 export class AppComponent {
   title = 'my-front';
+  courses: ICourse[] = [];
+
+  constructor(private courseService: CourseService){ }
+
+  update(){
+	this.courses = this.courseService.getCourses();
+  }
 
   onClick(){
     console.log("button clicked");

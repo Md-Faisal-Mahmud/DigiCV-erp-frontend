@@ -1,6 +1,6 @@
 <div>
-  <app-button color="red" cssClass="blueBorder"  text="MyButton" (mybtnClick)="onClick()"></app-button>
+  <app-button color="red" cssClass="blueBorder"  text="MyButton" (mybtnClick)="update()"></app-button> 
   <br/>
   <app-button color="yellow" text="MyButton2" (mybtnClick)="onClick2()"></app-button>
-  <app-course></app-course>
+  <app-course [courses]="courses"></app-course>
 </div>

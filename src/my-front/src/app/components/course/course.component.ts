@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ICourse } from '../../data/ICourse';
 
 @Component({
   selector: 'app-course',
@@ -9,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './course.component.css'
 })
 export class CourseComponent {
-
+  @Input() courses : ICourse[] = [];
 }
