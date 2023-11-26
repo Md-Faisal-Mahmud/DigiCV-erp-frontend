@@ -1,20 +1,36 @@
 import { Injectable } from '@angular/core';
-import { ICourse } from '../data/ICourse'
-import { Course } from '../data/Course';
-import { count } from 'console';
+import { ICourse } from '../data/ICourse' 
+import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
 
-  constructor() { }
+  private tokenUrl : string = "/v3/token";
+  private dataUrl: string = "/v3/course";
 
-  getCourses() : ICourse[]{
-    return [
-      new Course({ name : "C#", fees : 8000 }),
-      new Course({ name : "Asp.net", fees : 30000 }),
-      new Course({name : "laravel", fees: 12000})
-    ];
-    }  
+  constructor(private http: HttpClient) { }
+
+  getToken(username: string, password: string) : Observable<string>{
+    let token = this.http.get(this.tokenUrl +
+      `?email=${username}&password=${password}`,
+        {
+          headers: {'Accept':'text/html, application/xhtml+xml, */*','Content-Type':'application/x-www-form-urlencoded'},
+          responseType: 'text'
+        }
+      );
+  
+      return token;
+    }
+
+    getCourses(token: string) : Observable<ICourse[]>{
+
+      return this.http.get<ICourse[]>(this.dataUrl,
+        {
+          headers: {'Authorization':`Bearer ${token}`}
+        },
+      );
+    }
 }
